@@ -1,13 +1,57 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+		'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: 2rem;
+	width: 70%;
+	min-width: 600px;
+}
+
+.card-body_left {
+	border-right: 1px solid rgb(158, 156, 156);
+	width: 10%;
+	min-width: 270px;
+}
+
+.card__location {
+	color: rgb(41 99 213);
+	font-size: 18px;
+}
+
+.card__temperature {
+	margin-top: 10px;
+	font-size: 20px;
+	width: 40px;
+	text-align: center;
+	background-color: rgb(17 192 224 / 34%);
+	border-bottom: 2px solid rgb(17, 192, 224);
+}
+
+.card-additional {
+	padding-top: 15px;
+}
+
+.card-additional__item {
+	display: flex;
+	white-space: nowrap;
+	margin-top: 10px;
+}
+
+.divider {
+	border-bottom: 2px dotted grey;
+	width: 100%;
 }
